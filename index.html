@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Incidents Map with Mapbox GL</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        #map { height: 500px; width: 100%; }
+        #toggleLayer { margin: 10px; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <button id="toggleLayer">Toggle Traffic Incidents</button>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script>
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/sherrychalotra/cm8b4dwzr00ia01sqb9y9btek', // Replace with your style URL
+            center: [-114.0719, 51.0447], // Calgary coordinates [lon, lat]
+            zoom: 11,
+            accessToken: 'pk.eyJ1Ijoic2hlcnJ5Y2hhbG90cmEiLCJhIjoiY204Njd1OGczMDFrejJyb21nY3V4aGIzYiJ9.xamL_XEcC_5I3C7YIbKZww' // Replace with your token
+        });
+
+        var layerVisible = false;
+        document.getElementById('toggleLayer').addEventListener('click', function () {
+            if (layerVisible) {
+                map.remove(); // Remove the Mapbox GL map
+                layerVisible = false;
+                this.textContent = 'Show Traffic Incidents';
+                // Re-add OpenStreetMap via Leaflet (optional fallback)
+                var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(L.map('map').setView([51.0447, -114.0719], 11));
+            } else {
+                map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/sherrychalotra/cm8b4dwzr00ia01sqb9y9btek',
+                    center: [-114.0719, 51.0447],
+                    zoom: 11,
+                    accessToken: 'pk.eyJ1Ijoic2hlcnJ5Y2hhbG90cmEiLCJhIjoiY204Njd1OGczMDFrejJyb21nY3V4aGIzYiJ9.xamL_XEcC_5I3C7YIbKZww'
+                });
+                layerVisible = true;
+                this.textContent = 'Hide Traffic Incidents';
+            }
+        });
+    </script>
+</body>
+</html>
