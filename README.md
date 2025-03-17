@@ -25,8 +25,8 @@ This project visualizes **2017 Traffic Incidents in Calgary** using **Leaflet.js
 - **🏘️ Internal Roads:** 
   - **Color:** Dark Blue (Deep Dodger Blue for a modern, urban feel)
   - **Outline Color:** Light Blue (Sky Blue outline for contrast)
-**🏥 Land Use - Medical Properties (from Land Use Tile):**
-- **Color:**  Yellowish (Bright gold tone for clear) to highlight medical facilities distinctly.
+- **🏥 Land Use - Medical Properties (from Land Use Tile):**
+  - **Color:**  Yellowish (Bright gold tone for clear) to highlight medical facilities distinctly.
 
 ### 3️⃣ Design Considerations
 - **Readability & Contrast:** Ensures clear distinction between incidents and base map.
