@@ -13,10 +13,10 @@ loadConfig().then(() => {
     // ✅ Use the token from config.js
     var mapboxAccessToken = MAPBOX_ACCESS_TOKEN;
 
-// ✅ Replace this with your custom Mapbox Style URL from Mapbox Studio
+// ✅My custom Mapbox Style URL from Mapbox Studio
 //var customStyleURL = 'mapbox://styles/sherrychalotra/cm8b4dwzr00ia01sqb9y9btek';
 
-var customStyleURL = 'mapbox://styles/sherrychalotra/cm8b8vmfj00if01ss667q4vv7';
+var customStyleURL = 'mapbox://styles/sherrychalotra/cm8digld400u701ss0nzzhg80';
 
 // ✅ Initialize the Leaflet Map centered on Calgary (Default: OSM Map)
 var map = L.map('map').setView([51.0447, -114.0719], 10);
