@@ -15,7 +15,7 @@ This project visualizes **2017 Traffic Incidents in Calgary** using **Leaflet.js
 - **Blur:**  **0.5** – Softens edges for a refined look.
 - **Opacity:**  **0.8** – Allows overlapping points to remain distinguishable.
 - **Stroke Color:**  **Black (#000000)** – Provides contrast for better visibility.
-- **Stroke Width:**  **0.8px** – Maintains definition without clutter.
+- **Stroke Width:**  **1 px** – Maintains definition without clutter.
 - **Stroke Opacity:** **0.8** – Subtle but effective border enhancement.
 - **Translate:** **(0,0)** – No position shifts applied, ensuring accurate placement.
 
