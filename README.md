@@ -20,11 +20,11 @@ This project visualizes **2017 Traffic Incidents in Calgary** using **Leaflet.js
 - **Translate:** **(0,0)** – No position shifts applied, ensuring accurate placement.
 
 **Additional Road and Land Use Styling**
-**🛤️ Road Motorways and Trunks Color:** Greenish Palette to distinguish major roads naturally.
-**🏷️ Road Labels:** Color: Yellowish (Bright gold tone for clear, readable labels.)
-**🏘️ Internal Roads:** 
-- **Color:** Dark Blue (Deep Dodger Blue for a modern, urban feel)
-- **Outline Color:** Light Blue (Sky Blue outline for contrast)
+- **🛤️ Road Motorways and Trunks Color:** Greenish Palette to distinguish major roads naturally.
+- **🏷️ Road Labels:** Color: Yellowish (Bright gold tone for clear, readable labels.)
+- **🏘️ Internal Roads:** 
+  - **Color:** Dark Blue (Deep Dodger Blue for a modern, urban feel)
+  - **Outline Color:** Light Blue (Sky Blue outline for contrast)
 **🏥 Land Use - Medical Properties (from Land Use Tile):**
 - **Color:**  Yellowish (Bright gold tone for clear) to highlight medical facilities distinctly.
 
